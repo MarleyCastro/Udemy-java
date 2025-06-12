@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Ex1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int A = 1,B = sc.nextInt();
+
+
+        for (int i = 0; A < B; i++){
+            System.out.println("===================");
+            System.out.println("|    M E N U       ");
+            System.out.println("===================");
+            System.out.println("|   [1] De 1 a 10 |");
+            System.out.println("|   [2] De 10 a 1 |");
+            System.out.println("|   [3] Sair      |");
+            System.out.println("===================");
+            A = sc.nextInt();
+            if (A == 1){
+                for (i =0; A < 11;i++){
+                    System.out.print(A + "...");
+                    A++;
+                }
+            }if(A == 2){
+                A = 10;
+                for (i = 0; A > 1; i++){
+                    System.out.println(A + "...");
+                    A--;
+                }
+            }if (A == 3){
+                System.exit(0);
+            }
+        }
+
+
+    }
+}
